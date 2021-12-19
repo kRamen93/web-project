@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1445px;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    font-family: 'Montagu Slab', serif;
+}
+
+.header {
+    width: 1000px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    color: #828282;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.link:hover {
+    color: #070707;
+}
+
+.line {
+    position: absolute;
+    width: 940.6px;
+    height: 0px;
+    left: 160px;
+    top: 100.94px;
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+/* human */
+
+.main {
+    margin-top: 140px;
+}
+
+.human {
+    width: 1000px;
+}
+
+.human_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lang {
+    transform: rotate(-90deg);
+}
+
+.human_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about {
+    width: 1000px;
+    height: 506px;
+    margin-top: 100px;
+    font-family: 'Montagu Slab', serif;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+    background-color: #F6F6F6;
+    /* что бы блоки встали колонкой и по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_me {
+    font-family:'Montagu Slab', serif;     
+}
+.about_text_wrapper {
+    width: 485.34px;
+    height: 218px;
+    padding-top: 80px;  
+    /* margin: 0 auto; */
+}
+.about_text {    
+    font-family:'Montagu Slab', serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 17px;
+    color: #070707;
+}
+
+/* skills */
+
+.skills {
+    width: 1000px;
+}
+
+.skill_titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.skill_programs {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+/* portfolio */
+
+.portfolio {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding-bottom: 100px;
+}
+
+.portfolio_image {
+    width: 900px;
+    overflow: hidden;
+}
+.img {
+    padding-top: 100px;
+}
+
+.img_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+/* footer */
+.footer {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin-top: 85px;
+}
+
+.footer_icons a img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer_text {
+    margin: 0;
+}
+
+.footer_subtext {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer_button {
+    margin-top: 30px;
+    width: 180px;
+    height: 42px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.footer_like {
+    margin-top: 45px;
+    font-size: 14px;
+    color: #828282;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .wrapper {
+        margin: 0 auto;
+        width: 500px;
+    }
+    .container {
+        margin: 0 auto;
+        width: 500px;
+        font-family: 'Montagu Slab', serif;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .human {
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .human_title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lang {
+        display: none;
+    }
+
+    .human_image {
+        display: none;
+    }
+    .human_mobile {
+        background-image: url('./mobile.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 400px;
+    }
+
+    
+    /* about */
+    .about {
+        width: 400px;
+        font-size: 16px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .about_text_wrapper {
+        width: 200px;
+        padding-top: 80px;
+        /* margin: 0 auto; */
+    }
+    .about_text {    
+        font-family:'Montagu Slab', serif;
+        text-align: center;
+        padding-top: 17px;
+        padding-bottom: 40px;
+        color: #070707;
+        font-size: 14px;
+        
+    }
+    .skills {
+        width: 400px;
+        margin: 0 auto;
+       
+    }
+    
+    .skill_titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+    
+    .skill_programs {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .skill_programs img {
+        margin-bottom: 50px;
+    }
+    .portfolio {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F6F6F6;
+        padding-bottom: 40px;
+        margin: 0 auto;
+    }
+    
+    .portfolio_image {
+        width: 400px;
+        overflow: hidden;
+    }
+    .img {
+        display: none;
+    }
+    
+    .img_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        margin-top: 50px;
+        font-size: 14px;
+    }
+    .portfolio_mobile1{
+        background-image: url('apple.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 600px;
+        margin-top: 50px;
+    }
+    .portfolio_mobile2{
+        background-image: url('samsung.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 600px;
+        margin-top: 50px;
+    }
+    .portfolio_mobile3{
+        background-image: url('sony.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 600px;
+        margin-top: 50px;
+    }
+    
+    
+    .footer {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin: 0 auto;
+    }
+    
+    .footer_icons {
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        margin-top: 85px;
+    }
+    
+    .footer_icons a img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .footer_text {
+        margin: 0;
+    }
+    
+    .footer_subtext {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .footer_button {
+        margin-top: 30px;
+        width: 180px;
+        height: 42px;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+    }
+    
+    .footer_like {
+        margin-top: 45px;
+        font-size: 14px;
+        color: #828282;
+        text-align: center;
+    }
+}
